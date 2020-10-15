@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/aerial-view-of-buildings-510856.jpg);
+    background-size: cover;
+}
+
+#showcase {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+#showcase h1{
+    font-size:50px;
+    line-height:1.2;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000
+
+}
+
+#showcase h2{
+    font-size:25px;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#showcase .button{
+    font-size:18px;
+    text-decoration:none;
+    color: #fff;
+    border:#fff 1px solid;
+    padding: 10px 20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+#showcase .button:hover {
+    background: #fff;
+    color:#0055A4; 
+}
+
+
+
+/* gallery */
+
+#section-a {
+    background-color: #fff;
+}
+
+#section-c {
+    background-color: #ED2939;
+}
+
+/* section a */
+
+#section-a .beautifulparis {
+    float: left;
+    overflow: hidden;
+    height: 9%;
+    width: 25%;
+}
+
+#section-a ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 16;
+    overflow: hidden;
+}
+
+#section-a ul li {
+    float: right;
+    padding: 12 12;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* section-b 
+
+#section-b {
+    display: flex;
+    width: 100%;
+}
+
+col h1 {
+    text-align: center;
+}
+
+#section-b img {
+    width: 15%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+#section-b .col h1 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #1031A6;
+}
+
+*/
+ 
+/* section-c */
+
+#section-c .topnav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 16 16;
+    font-size: 16px;
+}
+
+#section-c .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+  #section-c .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+ 
+
+/* gallery */
+
+#gallerymain {
+    Width: 100%;
+    height: 100vh;
+    background-image: url(../img/pexels-skitterphoto-597049.png);
+    background-size: 120%; 
+    background-position: 70% 100%
+}
+
+#galleryheader {
+    height: 10vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+#galleryheader h1 {
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+
+/* Slideshow container */
+
+.container-box {
+    width: 700px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #9E9E9E;
+    left: 40%;
+    top: 190px;
+    background-color: #F2F2F2;
+    position: absolute;
+    padding: 30;
+    border: 5 5 #fff;
+}
+
+.slideshow-container {
+  max-width: 650px;
+  max-height: 415px;
+  position: relative; /* left: 250; top: -1275; */
+  margin: auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides  {
+  display: none;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative; top: 15;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* break 1 
+
+.break {
+    border-style: none; 
+    height: 100px;
+    background-color: #F2F2F2
+} */
+
+
+/* section-d */
+
+#section-d {
+    display: flex;
+    background-color: #F2F2F2;
+    Padding-top: 100px
+}
+
+#section-d div {
+    padding: 0 40;
+    border-style: none solid none none;
+    border-right-width: 1px;
+    border-right-color: #707070;
+}
+
+/* break 2 */
+
+.break-2 {
+    border-style: none; 
+    height: 50px;
+    background-color: #F2F2F2
+}
+
+/* section-e */
+
+#section-e {
+    display: flex;
+}
+
+#section-e div {
+    padding: 40px 40px;
+    width: 100%;    
+}
+
+#section-e .box-4 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #1031A6;
+}
+
+#section-e .box-5 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #1031A6;
+}
+
+#section-e .box-5 .button-2 {
+    font-size:18px;
+    text-decoration:none;
+    color: #1031A6;
+    border:#1031A6 1px solid;
+    padding: 10px 20px;
+    border-radius:10px;
+    margin-top: 30px;
+}
+
+
+#section-e .box-5 .button-2:hover {
+    background: #1031A6;
+    color:#fff; 
+}
+
+#section-e .box-6 {
+    background-color: #2B2B2B;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-6 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 16px;
+    overflow: hidden;
+}
+
+.box-6 ul li {
+    position: center;
+    display: inline-block;
+    padding: 12px 12px;
+}
+
+.box-6 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+#footer p {
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #eee;
+    
+}
